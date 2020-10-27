@@ -15,7 +15,7 @@ function App() {
             <Checkout />
           </Route>
           <Route path="/login">
-            <h1>Login page</h1>
+            <Login />
           </Route>
           {/* this is the default route */}
           <Route path="/">
