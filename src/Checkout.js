@@ -1,7 +1,7 @@
 import React from "react";
 import { useStateValue } from "./StateProvider";
-import "./Checkout.css";
 import CheckoutProduct from "./CheckoutProduct";
+import "./Checkout.css";
 
 function Checkout() {
   const [{ basket }] = useStateValue();
@@ -24,15 +24,17 @@ function Checkout() {
       ) : (
         <div>
           <h2 className="checkout__title">Your Shopping Basket</h2>
-          {basket.map((item) => (
-            <checkoutProduct
-              item={item.id}
-              title={item.title}
-              image={item.image}
-              price={item.price}
-              rating={item.rating}
-            />
-          ))}
+          {basket?.map((item) => {
+            return (
+              <CheckoutProduct
+                id={item.id}
+                title={item.title}
+                image={item.image}
+                price={item.price}
+                rating={item.rating}
+              />
+            );
+          })}
         </div>
       )}
     </div>
