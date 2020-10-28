@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+https://clone-b1a9e.web.app
+https://clone-b1a9e.firebaseapp.com
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
